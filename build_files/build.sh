@@ -2,23 +2,45 @@
 
 set -ouex pipefail
 
+# /opt directory fix
+mkdir -p /var/opt
+
 ### Install packages
+dnf5 install -y \
+    android-tools \
+    btrfsmaintenance \
+    containernetworking-plugins \
+    flatpak-builder \
+    podman-compose \
+    podman-machine \
+    podman-tui \
+    qemu-kvm \
+    sysprof \
+    tiptop \
+    usbmuxd \
+    zsh
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
+### Install gnome extensions
+dnf5 install -y \
+    gnome-shell-extension-apps-menu \
+    gnome-shell-extension-drive-menu
 
-# this installs a package from fedora repos
-dnf5 install -y tmux 
+### Install from copr
+# dnf5 copr enable user/project
+# dnf5 install -y \
+#     r2modman \
+#     gnome-shell-extension-advanced-alttab-window-switcher \
+#     gnome-shell-extension-vertical-workspaces \
+#     gnome-shell-extension-window-thumbnails \
+#     gnome-shell-extension-workspace-switcher-manager
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+### Install Kopia
+dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/kopia.repo
+dnf5 install -y kopia-ui
+mv /opt/KopiaUI /usr/lib/opt/KopiaUI
+cp -f /ctx/system_files/usr/lib/tmpfiles.d/kopia-ui.conf /usr/lib/tmpfiles.d/
+cp -f /ctx/system_files/usr/share/applications/kopia-ui.desktop /usr/share/applications/kopia-ui.desktop
 
-#### Example for enabling a System Unit File
-
-systemctl enable podman.socket
+### Install VSCode
+dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/vscode.repo
+dnf5 install -y code
