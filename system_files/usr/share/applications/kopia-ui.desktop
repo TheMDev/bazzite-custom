@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=KopiaUI
+Exec=/opt/KopiaUI/kopia-ui --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=auto --gtk-version=3 %U
+Terminal=false
+Type=Application
+Icon=kopia-ui
+StartupWMClass=KopiaUI
+Comment=Fast and secure open source backup.
+Categories=Utility;
