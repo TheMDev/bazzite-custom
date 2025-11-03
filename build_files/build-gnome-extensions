@@ -1,0 +1,54 @@
+#!/usr/bin/bash
+
+set -eoux pipefail
+
+echo "::group::Executing build-gnome-extensions"
+trap 'echo "::endgroup::"' EXIT
+
+# Build Extensions
+
+# Advanced Alt Tab Window Switcher
+make -C /usr/share/gnome-shell/extensions/advanced-alt-tab@G-dH.github.com
+
+# App Indicator Support
+# glib-compile-schemas /usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/schemas
+
+# Blur My Shell
+# make -C /usr/share/gnome-shell/extensions/blur-my-shell@aunetx
+# unzip -o /usr/share/gnome-shell/extensions/blur-my-shell@aunetx/build/blur-my-shell@aunetx.shell-extension.zip -d /usr/share/gnome-shell/extensions/blur-my-shell@aunetx
+# glib-compile-schemas /usr/share/gnome-shell/extensions/blur-my-shell@aunetx/schemas
+# rm -rf /usr/share/gnome-shell/extensions/blur-my-shell@aunetx/build
+
+# Caffeine
+# mv /usr/share/gnome-shell/extensions/tmp/caffeine/caffeine@patapon.info /usr/share/gnome-shell/extensions/caffeine@patapon.info
+# glib-compile-schemas /usr/share/gnome-shell/extensions/caffeine@patapon.info/schemas
+
+# Display Brightness ddcutil
+make -C /usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com
+unzip -o /usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com/dist/display-brightness-ddcutil@themightydeity.github.com.shell-extension.zip \
+-d /usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com
+glib-compile-schemas /usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com/schemas
+rm -rf /usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com/dist
+
+# Logo Menu
+# glib-compile-schemas /usr/share/gnome-shell/extensions/logomenu@aryan_k/schemas
+
+# Restart To
+# glib-compile-schemas /usr/share/gnome-shell/extensions/restartto@tiagoporsch.github.io/schemas
+
+# Tiling Shell
+# npm i
+# npm run build
+# npm run install:extension
+
+# Vertical Workspaces
+make -C /usr/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
+
+# Window Thumbnails
+make -C /usr/share/gnome-shell/extensions/window-thumbnails@G-dH.github.com
+
+# Workspace Switcher Manager
+make -C /usr/share/gnome-shell/extensions/workspace-switcher-manager@G-dH.github.com
+
+# Cleanup
+rm -rf /usr/share/gnome-shell/extensions/tmp
