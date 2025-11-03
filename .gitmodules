@@ -1,0 +1,30 @@
+[submodule "advanced-alt-tab@G-dH.github.com"]
+    path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/advanced-alt-tab@G-dH.github.com
+    url = https://github.com/G-dH/advanced-alttab-window-switcher.git
+# [submodule "appindicatorsupport@rgcjonas.gmail.com"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+#     url = https://github.com/ubuntu/gnome-shell-extension-appindicator.git
+# [submodule "blur-my-shell@aunetx"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/blur-my-shell@aunetx
+#     url = https://github.com/aunetx/blur-my-shell.git
+# [submodule "caffeine@patapon.info"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/tmp/caffeine
+#     url = https://github.com/eonpatapon/gnome-shell-extension-caffeine.git
+[submodule "display-brightness-ddcutil@themightydeity.github.com"]
+    path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com
+    url = https://github.com/daitj/gnome-display-brightness-ddcutil.git
+# [submodule "logomenu@aryan_k"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/logomenu@aryan_k
+#     url = https://github.com/bazzite-org/Logomenu.git
+# [submodule "restartto@tiagoporsch.github.io"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/restartto@tiagoporsch.github.io
+#     url = https://github.com/tiagoporsch/restartto.git
+[submodule "vertical-workspaces@G-dH.github.com"]
+    path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
+    url = https://github.com/G-dH/vertical-workspaces.git
+[submodule "window-thumbnails@G-dH.github.com"]
+    path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/window-thumbnails@G-dH.github.com
+    url = https://github.com/G-dH/window-thumbnails.git
+[submodule "workspace-switcher-manager@G-dH.github.com"]
+    path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/workspace-switcher-manager@G-dH.github.com
+    url = https://github.com/G-dH/workspace-switcher-manager.git
