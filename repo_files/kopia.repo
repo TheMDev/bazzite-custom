@@ -1,0 +1,6 @@
+[Kopia]
+name=Kopia
+baseurl=http://packages.kopia.io/rpm/stable/\$basearch/
+enabled=1
+gpgcheck=1
+gpgkey=https://kopia.io/signing-key
