@@ -49,6 +49,8 @@ dnf5 install -y \
     gnome-shell-extension-user-theme \
     gnome-shell-extension-window-list
 
+/ctx/build_files/build-gnome-extensions
+
 ### Remove Bazzite gnome extensions
 rm -rf /usr/share/gnome-shell/extensions/block-caribou-36@lxylxy123456.ercli.dev
 rm -rf /usr/share/gnome-shell/extensions/burn-my-windows@schneegans.github.com
