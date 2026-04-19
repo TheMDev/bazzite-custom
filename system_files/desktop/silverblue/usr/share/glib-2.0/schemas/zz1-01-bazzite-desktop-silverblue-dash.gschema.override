@@ -1,0 +1,32 @@
+[org.gnome.shell]
+app-picker-layout=[{ \
+'Bazaar': <{'position': <0>}>, \
+'Code': <{'position': <1>}>, \
+'CAD': <{'position': <2>}>, \
+'Containers': <{'position': <3>}>, \
+'WebApps': <{'position': <4>}>, \
+'Media': <{'position': <5>}>, \
+'Office': <{'position': <6>}>, \
+'Utilities': <{'position': <7>}>, \
+'EMU': <{'position': <8>}>, \
+'Games': <{'position': <9>}>, \
+'GamingUtilities': <{'position': <10>}>, \
+'Minecraft': <{'position': <11>}>, \
+'Waydroid': <{'position': <12>}> \
+}]
+
+favorite-apps=[ \
+'org.gnome.Nautilus.desktop', \
+'com.google.Chrome.desktop', \
+'org.mozilla.firefox.desktop', \
+'tv.plex.PlexDesktop.desktop', \
+'WebApp-AppleTV1400.desktop', \
+'WebApp-AppleMusic9878.desktop', \
+'com.discordapp.Discord.desktop', \
+'r2modman.desktop', \
+'dev.ftb.ftb-app.desktop', \
+'steam.desktop', \
+'code.desktop', \
+'com.axosoft.GitKraken.desktop', \
+'org.gnome.Ptyxis.desktop' \
+]
