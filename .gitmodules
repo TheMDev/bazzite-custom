@@ -1,0 +1,51 @@
+[submodule "advanced-alt-tab@G-dH.github.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/advanced-alt-tab@G-dH.github.com
+    url = https://github.com/G-dH/advanced-alttab-window-switcher.git
+# [submodule "appindicatorsupport@rgcjonas.gmail.com"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com
+#     url = https://github.com/ubuntu/gnome-shell-extension-appindicator.git
+# [submodule "bazaar-integration@kolunmi.github.io"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/tmp/bazaar-integration@kolunmi.github.io
+#     url = https://github.com/AlexanderVanhee/bazaar-companion.git
+# [submodule "blur-my-shell@aunetx"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/blur-my-shell@aunetx
+#     url = https://github.com/aunetx/blur-my-shell.git
+# [submodule "caffeine@patapon.info"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/tmp/caffeine
+#     url = https://github.com/eonpatapon/gnome-shell-extension-caffeine.git
+[submodule "dash-to-dock@micxgx.gmail.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
+    url = https://github.com/micheleg/dash-to-dock.git
+[submodule "dash-to-panel@jderose9.github.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com
+    url = https://github.com/home-sweet-gnome/dash-to-panel.git
+[submodule "display-brightness-ddcutil@themightydeity.github.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/display-brightness-ddcutil@themightydeity.github.com
+    url = https://github.com/daitj/gnome-display-brightness-ddcutil.git
+# [submodule "logomenu@aryan_k"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/logomenu@aryan_k
+#     url = https://github.com/ublue-os/bazzite-logomenu.git
+[submodule "multi-monitors-bar@frederykabryan"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/multi-monitors-bar@frederykabryan
+    url = https://github.com/FrederykAbryan/multi-monitors-bar_fapv2.git
+[submodule "quicksettings-audio-devices-hider@marcinjahn.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/quicksettings-audio-devices-hider@marcinjahn.com
+    url = https://github.com/marcinjahn/gnome-quicksettings-audio-devices-hider-extension.git
+[submodule "quicksettings-audio-devices-renamer@marcinjahn.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/quicksettings-audio-devices-renamer@marcinjahn.com
+    url = https://github.com/marcinjahn/gnome-quicksettings-audio-devices-renamer-extension.git
+# [submodule "restartto@tiagoporsch.github.io"]
+#     path = system_files/desktop/silverblue/usr/share/gnome-shell/extensions/tmp/restartto@tiagoporsch.github.io
+#     url = https://github.com/tiagoporsch/restartto.git
+[submodule "tilingshell@ferrarodomenico.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/tilingshell@ferrarodomenico.com
+    url = https://github.com/domferr/tilingshell.git
+[submodule "vertical-workspaces@G-dH.github.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
+    url = https://github.com/G-dH/vertical-workspaces.git
+[submodule "window-thumbnails@G-dH.github.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/window-thumbnails@G-dH.github.com
+    url = https://github.com/G-dH/window-thumbnails.git
+[submodule "workspace-switcher-manager@G-dH.github.com"]
+    path = system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/workspace-switcher-manager@G-dH.github.com
+    url = https://github.com/G-dH/workspace-switcher-manager.git
