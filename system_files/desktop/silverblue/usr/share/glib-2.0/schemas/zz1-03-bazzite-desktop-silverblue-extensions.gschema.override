@@ -1,0 +1,27 @@
+[org.gnome.shell]
+enabled-extensions=[ \
+'add-to-steam@pupper.space', \
+'advanced-alt-tab@G-dH.github.com', \
+'appindicatorsupport@rgcjonas.gmail.com', \
+'bazaar-integration@kolunmi.github.io', \
+'blur-my-shell@aunetx', \
+'caffeine@patapon.info', \
+'dash-to-dock@micxgx.gmail.com', \
+'dash-to-panel@jderose9.github.com', \
+'display-brightness-ddcutil@themightydeity.github.com', \
+'drive-menu@gnome-shell-extensions.gcampax.github.com', \
+'logomenu@aryan_k', \
+'quicksettings-audio-devices-hider@marcinjahn.com', \
+'quicksettings-audio-devices-renamer@marcinjahn.com', \
+'restartto@tiagoporsch.github.io', \
+'tilingshell@ferrarodomenico.com', \
+'user-theme@gnome-shell-extensions.gcampax.github.com', \
+'vertical-workspaces@G-dH.github.com', \
+'window-thumbnails@G-dH.github.com', \
+'workspace-switcher-manager@G-dH.github.com' \
+]
+
+disabled-extensions=[ \
+'background-logo@fedorahosted.org', \
+'gsconnect@andyholmes.github.io' \
+]
