@@ -1,0 +1,69 @@
+# TODO CHECK
+[org.gnome.desktop.app-folders]
+folder-children=['Bazaar', 'Code', 'CAD', 'Containers', 'WebApps', 'Media', 'Office', 'Utilities', 'EMU', 'Games', 'GamingUtilities', 'Minecraft', 'Waydroid']
+
+[org.gnome.desktop.app-folders.folders.Bazaar]
+apps=['io.github.kolunmi.Bazaar.desktop', 'bbrew.desktop', 'ca.desrt.dconf-editor.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.github.tchx84.Flatseal.desktop', 'it.mijorus.gearlever.desktop', 'io.github.flattool.Ignition.desktop', 'io.github.flattool.Warehouse.desktop', 'webapp-manager.desktop', 'system-update.desktop', 'io.github.ublue_os.yafti_gtk.desktop']
+name='Bazaar'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.CAD]
+apps=['org.blender.Blender.desktop', 'org.freecad.FreeCAD.desktop', 'io.github.gtkwave.GTKWave.desktop', 'org.kicad.KiCad.desktop', 'com.github.reds.LogisimEvolution.desktop', 'org.openscad.OpenSCAD.desktop', 'com.ultimaker.cura.desktop', 'org.kicad.KiCad.gerbview.desktop', 'org.kicad.KiCad.eeschema.desktop', 'org.kicad.KiCad.pcbnew.desktop', 'org.kicad.KiCad.pcbcalculator.desktop', 'org.kicad.KiCad.bitmap2component.desktop']
+name='CAD'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Code]
+apps=['org.cockpit_project.CockpitClient.desktop', 'org.ghidra_sre.Ghidra.desktop', 'com.gitbutler.gitbutler.desktop', 'com.unity.UnityHub.desktop', 'org.filezillaproject.Filezilla.desktop', 'one.flipperzero.qFlipper.desktop', 'com.emqx.MQTTX.desktop', 'jetbrains-toolbox.desktop', 'jetbrains-clion-ddae84f9-68a8-4b2b-872c-2f0bf8a47ec2.desktop', 'jetbrains-datagrip-bf4868ef-2466-4a9a-abd9-a956ded425c1.desktop', 'jetbrains-goland-30b2e7a2-c50c-4541-9f55-93b9cdd7656a.desktop', 'jetbrains-idea-c16255cb-4ffa-4162-8b39-9ec578bde576.desktop', 'jetbrains-pycharm-b7818e9a-a825-411b-8c79-cf0942bd1db2.desktop', 'jetbrains-rider-0c62aa36-6b7f-44cf-a49c-750431e0cd48.desktop', 'jetbrains-rustrover-cf07786b-cce7-4261-a98e-e4b2a101bc57.desktop', 'jetbrains-webstorm-ab4a4d7c-e933-4dbe-a0ef-3fbbfdbcdb4f.desktop', 'io.qt.Designer.desktop', 'dk.gqrx.gqrx.desktop', 'org.sdrangel.SDRangel.desktop', 'com.st.STM32CubeMX.desktop', 'com.github.LongSoft.UEFITool.desktop', 'org.wireshark.Wireshark.desktop']
+name='Code'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Containers]
+apps=['io.github.dvlv.boxbuddyrs.desktop', 'org.gnome.Boxes.desktop', 'com.ranfdev.DistroShelf.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'org.virt_manager.virt-manager.desktop']
+name='Containers'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.EMU]
+apps=['info.cemu.Cemu.desktop', 'org.DolphinEmu.dolphin-emu.desktop', 'com.gerbilsoft.rom-properties.rp-config.desktop', 'com.transmissionbt.Transmission.desktop']
+name='EMU'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Games]
+apps=['bazzite-steam-bpm.desktop', 'com.heroicgameslauncher.hgl.desktop', 'net.lutris.Lutris.desktop', 'io.github.sharkwouter.Minigalaxy.desktop', 'org.gabmus.envision.desktop', 'io.edcd.EDMarketConnector.desktop', 'org.gnome.Aisleriot.desktop', 'org.gnome.Chess.desktop', 'org.gnome.Four-in-a-row.desktop', 'org.gnome.Klotski.desktop', 'org.gnome.Mahjongg.desktop', 'org.gnome.Nibbles.desktop', 'org.openttd.OpenTTD.desktop', 'com.github.k4zmu2a.spacecadetpinball.desktop', 'org.gnome.Sudoku.desktop', 'org.gnome.Taquin.desktop', 'org.gnome.TwentyFortyEight.desktop']
+name='Games'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.GamingUtilities]
+apps=['com.github.Matoking.protontricks.desktop', 'com.vysp3r.ProtonPlus.desktop', 'net.davidotek.pupgui2.desktop', 'com.usebottles.bottles.desktop', 'io.github.fastrizwaan.WineCharm.desktop', 'io.github.fastrizwaan.WineZGUI.desktop', 'input-remapper-gtk.desktop', 'io.github.rfrench3.scopebuddy-gui.desktop', 'dev.lizardbyte.app.Sunshine.desktop']
+name='Gaming Utilities'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Media]
+apps=['org.audacityteam.Audacity.desktop', 'org.gimp.GIMP.desktop', 'fr.handbrake.ghb.desktop', 'org.inkscape.Inkscape.desktop', 'org.gnome.TextEditor.desktop', 'org.videolan.VLC.desktop', 'net.sourceforge.projectM.desktop', 'io.mpv.Mpv.desktop']
+name='Media'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Minecraft]
+apps=['com.mojang.Minecraft.desktop', 'io.mrarm.mcpelauncher.desktop', 'com.github.cubitect.cubiomes-viewer.desktop', 'page.codeberg.JakobDev.jdNBTExplorer.desktop', 'org.prismlauncher.PrismLauncher.desktop']
+name='Minecraft'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Office]
+apps=['org.libreoffice.LibreOffice.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'org.mozilla.Thunderbird.desktop', 'dev.mufeed.Wordbook.desktop']
+name='Office'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.Utilities]
+apps=['btrfs-assistant.desktop', 'io.github.dimtpap.coppwr.desktop', 'com.github.wwmm.easyeffects.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'io.github.shundhammer.qdirstat.desktop', 'discourse.desktop', 'bazzite-documentation.desktop', 'firewall-config.desktop', 'kopia-ui.desktop', 'org.gnome.Logs.desktop', 'io.missioncenter.MissionCenter.desktop', 'nvidia-settings.desktop', 'org.openrgb.OpenRGB.desktop', 'org.freedesktop.MalcontentControl.desktop', 'xyz.z3ntu.razergenie.desktop', 'org.gnome.Sysprof.desktop', 'org.gnome.Settings.desktop', 'org.kde.kleopatra.desktop', 'com.yubico.yubioath.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.raspberrypi.rpi-imager.desktop', 'org.gnome.Yelp.desktop']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org.gnome.desktop.app-folders.folders.Waydroid]
+apps=['Waydroid.desktop']
+categories=['X-WayDroid-App']
+name='Waydroid'
+translate=false
+
+[org.gnome.desktop.app-folders.folders.WebApps]
+apps=['app.grayjay.Grayjay.desktop', 'WebApp-HomeAssistant2650.desktop', 'WebApp-httpscockpithomepi2573.desktop']
+name='Web Apps'
+translate=false

@@ -1,0 +1,169 @@
+# TODO CHECK org.gnome.shell
+
+[org.gnome.shell.extensions.user-theme]
+name='Bazzite-MDev'
+
+[org.gnome.desktop.datetime]
+automatic-timezone=true
+
+[org.gnome.desktop.interface]
+accent-color='blue'
+clock-show-seconds=true
+clock-show-weekday=true
+color-scheme='prefer-dark'
+document-font-name='Noto Sans 11'
+enable-animations=true
+enable-hot-corners=false
+font-name='Noto Sans 11'
+monospace-font-name='Fira Code weight=450 10'
+show-battery-percentage=true
+
+[org.gnome.desktop.background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/convergence-dynamic.xml'
+picture-uri-dark='file:///usr/share/backgrounds/convergence-dynamic.xml'
+primary-color='#310042'
+secondary-color='#000622'
+
+[org.gnome.desktop.screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/convergence-dynamic.xml'
+primary-color='#310042'
+secondary-color='#000622'
+
+[org.gnome.desktop.sound]
+event-sounds=false
+
+[org.gnome.desktop.wm.preferences]
+button-layout='appmenu:minimize,maximize,close'
+titlebar-font='Noto Sans Medium 11'
+
+[org.gnome.shell.extensions.appindicator]
+legacy-tray-enabled=false
+
+[org.gnome.shell.extensions.dash-to-dock]
+intellihide=true
+intellihide-mode='ALL_WINDOWS'
+multi-monitor=true
+show-apps-always-in-the-edge=false
+show-apps-at-top=true
+show-mounts-network=true
+show-trash=false
+workspace-agnostic-urgent-windows=false
+
+# TODO UPDATE
+[org.gnome.shell.extensions.dash-to-panel]
+animate-app-switch=false
+animate-appicon-hover-animation-extent={'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+animate-window-launch=false
+dot-position='BOTTOM'
+extension-version=72
+global-border-radius=0
+highlight-appicon-hover=false
+hotkeys-overlay-combo='TEMPORARILY'
+intellihide=true
+intellihide-behaviour='FOCUSED_WINDOWS'
+intellihide-hide-from-monitor-windows=false
+intellihide-hide-from-windows=true
+intellihide-only-secondary=false
+intellihide-use-pressure=true
+multi-monitors=true
+panel-anchors='{"SAM-HCHNA00518":"MIDDLE","SAM-HCHNA00527":"MIDDLE"}'
+panel-element-positions='{"SAM-HCHNA00518":[{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"taskbar","visible":false,"position":"stackedTL"},{"element":"desktopButton","visible":false,"position":"stackedBR"}],"SAM-HCHNA00527":[{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"dateMenu","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"taskbar","visible":false,"position":"stackedTL"},{"element":"desktopButton","visible":false,"position":"stackedBR"}]}'
+panel-element-positions-monitors-sync=true
+panel-lengths='{}'
+panel-positions='{"SAM-HCHNA00518":"TOP","SAM-HCHNA00527":"TOP"}'
+panel-sizes='{"SAM-HCHNA00518":24,"SAM-HCHNA00527":24}'
+prefs-opened=false
+primary-monitor='SAM-HCHNA00527'
+progress-show-count=false
+show-favorites=false
+show-favorites-all-monitors=false
+show-running-apps=false
+show-tooltip=false
+show-window-previews=false
+stockgs-keep-dash=true
+stockgs-keep-top-panel=false
+stockgs-panelbtn-click-only=false
+trans-panel-opacity=0.0
+trans-use-border=false
+trans-use-custom-bg=false
+trans-use-custom-opacity=true
+window-preview-title-position='TOP'
+
+[org.gnome.shell.extensions.Logo-menu]
+hide-forcequit=false
+show-activities-button=false
+show-lutris=false
+
+[org.gnome.shell.extensions.quicksettings-audio-devices-hider]
+available-input-names=[ \
+'Digital Input (S/PDIF) – GoMic compact condenser mic', \
+'Easy Effects Source', \
+'Microphone – GoMic compact condenser mic' \
+]
+available-output-names=[ \
+'Digital Output (S/PDIF) – GoMic compact condenser mic', \
+'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller', \
+'Easy Effects Sink', \
+'HDMI / DisplayPort – GA102 High Definition Audio Controller', \
+'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller', \
+'Headphones – Starship/Matisse HD Audio Controller', \
+'Speakers – GoMic compact condenser mic' \
+]
+excluded-input-names=[ \
+'Easy Effects Source' \
+]
+excluded-output-names=[ \
+'Digital Output (S/PDIF) – GoMic compact condenser mic', \
+'Easy Effects Sink', \
+'HDMI / DisplayPort – GA102 High Definition Audio Controller', \
+'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller', \
+'Speakers – GoMic compact condenser mic' \
+]
+
+[org.gnome.shell.extensions.quicksettings-audio-devices-renamer]
+input-names-map={ \
+'Digital Input (S/PDIF) – GoMic compact condenser mic': 'Digital Input (S/PDIF) – GoMic compact condenser mic', \
+'Digital Input (S/PDIF) – USB Audio': 'Digital Input (S/PDIF) – USB Audio', \
+'Easy Effects Source': 'Easy Effects Source', \
+'Microphone – GoMic compact condenser mic': 'Microphone – GoMic compact condenser mic', \
+'Microphone – USB Audio': 'Microphone – USB Audio' \
+}
+output-names-map={ \
+'Analog Output – USB Audio': 'Analog Output – USB Audio', \
+'Digital Output (S/PDIF) – GoMic compact condenser mic': 'Digital Output (S/PDIF) – GoMic compact condenser mic', \
+'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller': 'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller', \
+'Digital Output (S/PDIF) – USB Audio': 'Digital Output (S/PDIF) – USB Audio', \
+'Dummy Output': 'Dummy Output', \
+'Easy Effects Sink': 'Easy Effects Sink', \
+'HDMI / DisplayPort – GA102 High Definition Audio Controller': 'HDMI / DisplayPort – GA102 High Definition Audio Controller', \
+'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller': 'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller', \
+'Headphones – Starship/Matisse HD Audio Controller': 'Headphones – Starship/Matisse HD Audio Controller', \
+'Speakers – GoMic compact condenser mic': 'Speakers – GoMic compact condenser mic' \
+}
+
+[org.gnome.shell.extensions.tilingshell]
+inner-gaps=0
+outer-gaps=0
+top-edge-maximize=true
+quarter-tiling-threshold=25
+enable-tiling-system-windows-suggestions=true
+enable-screen-edges-windows-suggestions=true
+
+[org.gnome.shell.extensions.vertical-workspaces]
+app-grid-columns=6
+app-grid-content=2
+app-grid-folder-columns=4
+app-grid-folder-rows=4
+app-grid-folder-spacing=12
+app-grid-icon-size=64
+app-grid-spacing=12
+ws-thumbnails-position=5
+wst-position-adjust=0
+
+[org.gnome.shell.extensions.window-list]
+display-all-workspaces=true
+show-on-all-monitors=true
