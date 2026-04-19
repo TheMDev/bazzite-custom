@@ -91,50 +91,50 @@ show-activities-button=false
 show-lutris=false
 
 [org/gnome/shell/extensions/quicksettings-audio-devices-hider]
-available-input-names=[
-'Digital Input (S/PDIF) – GoMic compact condenser mic',
-'Easy Effects Source',
-'Microphone – GoMic compact condenser mic'
+available-input-names=[ \
+'Digital Input (S/PDIF) – GoMic compact condenser mic', \
+'Easy Effects Source', \
+'Microphone – GoMic compact condenser mic' \
 ]
-available-output-names=[
-'Digital Output (S/PDIF) – GoMic compact condenser mic',
-'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller',
-'Easy Effects Sink',
-'HDMI / DisplayPort – GA102 High Definition Audio Controller',
-'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller',
-'Headphones – Starship/Matisse HD Audio Controller',
-'Speakers – GoMic compact condenser mic'
+available-output-names=[ \
+'Digital Output (S/PDIF) – GoMic compact condenser mic', \
+'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller', \
+'Easy Effects Sink', \
+'HDMI / DisplayPort – GA102 High Definition Audio Controller', \
+'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller', \
+'Headphones – Starship/Matisse HD Audio Controller', \
+'Speakers – GoMic compact condenser mic' \
 ]
-excluded-input-names=[
-'Easy Effects Source'
+excluded-input-names=[ \
+'Easy Effects Source' \
 ]
-excluded-output-names=[
-'Digital Output (S/PDIF) – GoMic compact condenser mic',
-'Easy Effects Sink',
-'HDMI / DisplayPort – GA102 High Definition Audio Controller',
-'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller',
-'Speakers – GoMic compact condenser mic'
+excluded-output-names=[ \
+'Digital Output (S/PDIF) – GoMic compact condenser mic', \
+'Easy Effects Sink', \
+'HDMI / DisplayPort – GA102 High Definition Audio Controller', \
+'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller', \
+'Speakers – GoMic compact condenser mic' \
 ]
 
 [org/gnome/shell/extensions/quicksettings-audio-devices-renamer]
-input-names-map={
-'Digital Input (S/PDIF) – GoMic compact condenser mic': 'Digital Input (S/PDIF) – GoMic compact condenser mic',
-'Digital Input (S/PDIF) – USB Audio': 'Digital Input (S/PDIF) – USB Audio',
-'Easy Effects Source': 'Easy Effects Source',
-'Microphone – GoMic compact condenser mic': 'Microphone – GoMic compact condenser mic',
-'Microphone – USB Audio': 'Microphone – USB Audio'
+input-names-map={ \
+'Digital Input (S/PDIF) – GoMic compact condenser mic': 'Digital Input (S/PDIF) – GoMic compact condenser mic', \
+'Digital Input (S/PDIF) – USB Audio': 'Digital Input (S/PDIF) – USB Audio', \
+'Easy Effects Source': 'Easy Effects Source', \
+'Microphone – GoMic compact condenser mic': 'Microphone – GoMic compact condenser mic', \
+'Microphone – USB Audio': 'Microphone – USB Audio' \
 }
-output-names-map={
-'Analog Output – USB Audio': 'Analog Output – USB Audio',
-'Digital Output (S/PDIF) – GoMic compact condenser mic': 'Digital Output (S/PDIF) – GoMic compact condenser mic',
-'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller': 'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller',
-'Digital Output (S/PDIF) – USB Audio': 'Digital Output (S/PDIF) – USB Audio',
-'Dummy Output': 'Dummy Output',
-'Easy Effects Sink': 'Easy Effects Sink',
-'HDMI / DisplayPort – GA102 High Definition Audio Controller': 'HDMI / DisplayPort – GA102 High Definition Audio Controller',
-'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller': 'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller',
-'Headphones – Starship/Matisse HD Audio Controller': 'Headphones – Starship/Matisse HD Audio Controller',
-'Speakers – GoMic compact condenser mic': 'Speakers – GoMic compact condenser mic'
+output-names-map={ \
+'Analog Output – USB Audio': 'Analog Output – USB Audio', \
+'Digital Output (S/PDIF) – GoMic compact condenser mic': 'Digital Output (S/PDIF) – GoMic compact condenser mic', \
+'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller': 'Digital Output (S/PDIF) – Starship/Matisse HD Audio Controller', \
+'Digital Output (S/PDIF) – USB Audio': 'Digital Output (S/PDIF) – USB Audio', \
+'Dummy Output': 'Dummy Output', \
+'Easy Effects Sink': 'Easy Effects Sink', \
+'HDMI / DisplayPort – GA102 High Definition Audio Controller': 'HDMI / DisplayPort – GA102 High Definition Audio Controller', \
+'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller': 'HDMI / DisplayPort 2 – GA102 High Definition Audio Controller', \
+'Headphones – Starship/Matisse HD Audio Controller': 'Headphones – Starship/Matisse HD Audio Controller', \
+'Speakers – GoMic compact condenser mic': 'Speakers – GoMic compact condenser mic' \
 }
 
 [org.gnome.shell.extensions.tilingshell]

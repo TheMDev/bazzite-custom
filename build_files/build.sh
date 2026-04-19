@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ouex pipefail
+set -eoux pipefail
 
 # /opt directory fix
 mkdir -p /var/opt
@@ -35,16 +35,19 @@ dnf5 install -y \
     containernetworking-plugins \
     fedpkg \
     flatpak-builder \
-    glib2-devel \
-    nodejs \
+    libvirt \
     podman-compose \
     podman-machine \
     podman-tui \
+    qemu \
     qemu-kvm \
     sysprof \
     tiptop \
     usbmuxd \
+    virt-manager \
+    waypipe \
     wireguard-tools \
     zsh
 
+# TODO
 # echo "import \"/usr/share/mdev-os/custom.just\"" >>/usr/share/ublue-os/justfile

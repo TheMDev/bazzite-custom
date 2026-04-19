@@ -21,10 +21,10 @@ center-new-windows=true
 dynamic-workspaces=true
 edge-tiling=false
 workspaces-only-on-primary=false
-experimental-features=[
-'scale-monitor-framebuffer',
-'variable-refresh-rate',
-'xwayland-native-scaling'
+experimental-features=[ \
+'scale-monitor-framebuffer', \
+'variable-refresh-rate', \
+'xwayland-native-scaling' \
 ]
 
 [org.gtk.Settings.FileChooser]
