@@ -1,24 +1,67 @@
 #!/bin/bash
 
-set -ouex pipefail
+set -eoux pipefail
 
-### Install packages
+echo "::group::Installing Developer Packages"
+trap 'echo "::endgroup::"' EXIT
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
+# /opt directory fix
+mkdir -p /var/opt
 
-# this installs a package from fedora repos
-dnf5 install -y tmux 
+# Copy system files to root
+cp  -r \
+    /ctx/system_files/desktop/shared/* \
+    /ctx/system_files/desktop/silverblue/* \
+    /
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+# Install from copr
+## dnf5 copr enable -y user/project
+dnf5 copr enable -y mdwagner/mutter
+dnf5 copr enable -y ublue-os/bazzite
+dnf5 copr enable -y ublue-os/bazzite-multilib
 
-#### Example for enabling a System Unit File
+# Remove Bazzite's package version lock
+# dnf5 versionlock delete package
+# dnf5 swap -y --repo=copr:copr.fedorainfracloud.org:mdwagner:package package package-version.fcXX.x86_64
 
-systemctl enable podman.socket
+# Install Kopia
+dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/kopia.repo
+dnf5 install -y kopia-ui
+mv /opt/KopiaUI /usr/lib/opt/KopiaUI
+
+# Install VSCode
+dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/vscode.repo
+dnf5 install -y code
+
+# Install packages
+dnf5 install -y \
+    android-tools \
+    btrfsmaintenance \
+    cmake \
+    cockpit \
+    cockpit-files \
+    cockpit-machines \
+    cockpit-ostree \
+    cockpit-podman \
+    containernetworking-plugins \
+    fedpkg \
+    flatpak-builder \
+    gcc \
+    gcc-c++ \
+    git-lfs \
+    libvirt \
+    podman-compose \
+    podman-machine \
+    podman-tui \
+    qemu \
+    qemu-kvm \
+    sysprof \
+    tiptop \
+    usbmuxd \
+    virt-manager \
+    waypipe \
+    wireguard-tools \
+    zsh
+
+# TODO
+# echo "import \"/usr/share/mdev-os/custom.just\"" >>/usr/share/ublue-os/justfile
