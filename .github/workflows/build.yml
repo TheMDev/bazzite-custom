@@ -113,6 +113,7 @@ jobs:
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
+          layers: true
           oci: false
           build-args: |
             BASE_IMAGE=${{ env.BASE_IMAGE }}${{ matrix.base_image_spin }}:${{ env.DEFAULT_TAG }}
