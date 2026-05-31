@@ -16,7 +16,7 @@ cp  -r \
 
 # Install from copr
 ## dnf5 copr enable -y user/project
-dnf5 copr enable -y mdwagner/mutter
+# dnf5 copr enable -y mdwagner/mutter
 dnf5 copr enable -y ublue-os/bazzite
 dnf5 copr enable -y ublue-os/bazzite-multilib
 
@@ -33,9 +33,32 @@ mv /opt/KopiaUI /usr/lib/opt/KopiaUI
 dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/vscode.repo
 dnf5 install -y code
 
-# Install packages
+# Install Bazzite DX Packages
 dnf5 install -y \
     android-tools \
+    bcc \
+    bpftop \
+    bpftrace \
+    flatpak-builder \
+    podman-compose \
+    podman-machine \
+    podman-tui \
+    sysprof \
+    tiptop \
+    usbmuxd \
+    waypipe \
+    zsh
+
+# Install Bazzite DX Virt Packages
+dnf5 install -y \
+    guestfs-tools \
+    libvirt \
+    qemu \
+    qemu-kvm \
+    virt-manager
+
+# Install Custom DX Packages
+dnf5 install -y \
     btrfsmaintenance \
     cmake \
     cockpit \
@@ -45,23 +68,10 @@ dnf5 install -y \
     cockpit-podman \
     containernetworking-plugins \
     fedpkg \
-    flatpak-builder \
     gcc \
     gcc-c++ \
     git-lfs \
-    libvirt \
-    podman-compose \
-    podman-machine \
-    podman-tui \
-    qemu \
-    qemu-kvm \
-    sysprof \
-    tiptop \
-    usbmuxd \
-    virt-manager \
-    waypipe \
-    wireguard-tools \
-    zsh
+    wireguard-tools
 
 # TODO
 # echo "import \"/usr/share/mdev-os/custom.just\"" >>/usr/share/ublue-os/justfile

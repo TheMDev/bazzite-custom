@@ -25,6 +25,14 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=cache,dst=/var/log \
     --mount=type=tmpfs,dst=/run \
     --mount=type=tmpfs,dst=/tmp \
+    /ctx/build_files/build-kdump.sh && \
+    /ctx/build_files/cleanup.sh
+
+RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
+    --mount=type=cache,dst=/var/cache \
+    --mount=type=cache,dst=/var/log \
+    --mount=type=tmpfs,dst=/run \
+    --mount=type=tmpfs,dst=/tmp \
     /ctx/build_files/build-envision.sh && \
     /ctx/build_files/cleanup.sh
 
