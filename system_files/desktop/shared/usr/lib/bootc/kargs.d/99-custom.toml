@@ -1,0 +1,1 @@
+kargs = ["sysrq_always_enabled=1"]
