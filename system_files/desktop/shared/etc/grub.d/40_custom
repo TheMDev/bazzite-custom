@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+exec tail -n +3 $0
+set btrfs_subvol="/boot"
+set btrfs_relative_path=y
