@@ -31,7 +31,7 @@ mv /opt/KopiaUI /usr/lib/opt/KopiaUI
 
 # Install OpenRazer Daemon
 dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/hardware-razer.repo
-dnf5 install -y --enable-repo="hardware_razer" openrazer-daemon
+# dnf5 install -y --enable-repo="hardware_razer" openrazer-daemon
 
 # Install VSCode
 dnf5 config-manager addrepo --from-repofile=/ctx/repo_files/vscode.repo
