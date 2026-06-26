@@ -37,7 +37,7 @@ jobs:
       actions: write
     steps:
       - name: Delete Workflows Older Than 30 Days
-        uses: igorjs/gh-actions-clean-workflow@14971bffa5439f838fe3b875958e9644fd6fead6
+        uses: igorjs/gh-actions-clean-workflow@8ee8c5e315fc0ca0b3972a9732f6b652f569b6ce
         with:
           token: ${{ github.token }}
           owner: ${{ github.repository_owner }}
