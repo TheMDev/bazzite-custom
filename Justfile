@@ -1,6 +1,7 @@
 set dotenv-filename := "image-template.env"
 set dotenv-load
 
+export base_image := env_var("BASE_IMAGE")
 export image_name := env_var("IMAGE_NAME")
 export repo_organization := env_var("REPO_ORGANIZATION")
 export image_desc := env_var("IMAGE_DESC")
@@ -93,12 +94,15 @@ sudoif command *args:
 #
 
 # Build the image using the specified parameters
-build $target_image=image_name $tag=default_tag:
+build $target_base=base_image $target_image=image_name $tag=default_tag:
     #!/usr/bin/env bash
 
     set -euox pipefail
 
     BUILD_ARGS=()
+    BUILD_ARGS+=("--build-arg" "BASE_IMAGE=${target_base}")
+    BUILD_ARGS+=("--build-arg" "IMAGE_NAME=${target_image}")
+    BUILD_ARGS+=("--build-arg" "IMAGE_VENDOR=${repo_organization}")
     LABELS=()
     if [[ -z "$(git status -s)" ]]; then
         GIT_SHA=$(git rev-parse --short HEAD)
